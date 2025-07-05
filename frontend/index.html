@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voice Recorder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Voice Recording Portal</h1>
+
+  <!-- Login Inputs -->
+  <input id="participant_id" placeholder="Participant ID" /> <br />
+  <input id="email" placeholder="Email Address" /> <br />
+  <button onclick="login()">Login</button>
+
+  <!-- Sentence Display -->
+  <div id="sentence">Press "Next Sentence" to begin.</div>
+
+  <!-- Recording Controls -->
+  <button onclick="fetchSentence()">Next Sentence</button>
+  <button onclick="startRecording()">Start Recording</button>
+  <button onclick="stopRecording()">Stop & Upload</button>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>
